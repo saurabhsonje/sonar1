@@ -5,7 +5,7 @@ pipeline {
 
             steps {
 
-                       git "https://github.com/saurabhsonje/sonar.git"
+                       git "https://github.com/saurabhsonje/alldata.git"
                 //
 
             }
@@ -16,7 +16,7 @@ pipeline {
 
             steps {
 
-                sh "mvn package"
+                sh "mvn test"
 
                 //
 
@@ -28,7 +28,7 @@ pipeline {
 
             steps {
 
-                  echo "this is step1"
+                  sh "/sonar-scanner/sonar-scanner/bin/sonar-runner"
 
             }
 
