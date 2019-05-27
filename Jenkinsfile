@@ -5,7 +5,7 @@ pipeline {
 
             steps {
 
-                       git "https://github.com/saurabhsonje/alldata.git"
+                       git "https://github.com/saurabhsonje/sonar1.git"
                 //
 
             }
